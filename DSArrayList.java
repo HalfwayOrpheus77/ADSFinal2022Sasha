@@ -12,7 +12,7 @@ import java.util.Iterator;
 
 public class DSArrayList<T> implements DSList<T>, Iterable<T> {
 
-    private T [] list; 
+    private T [] list;
     int length = 0;
 
     // constructor
@@ -82,7 +82,6 @@ public class DSArrayList<T> implements DSList<T>, Iterable<T> {
         list[location] = item;
     }
 
-
     public T get(int i) {
         //if ( i < length ) {
         if(i < list.length){
@@ -96,7 +95,7 @@ public class DSArrayList<T> implements DSList<T>, Iterable<T> {
         for ( int i = 0 ; i < length ; i++ ) {
             if ( x.equals(list[i]) ) {
                 for ( int j = i ; j < length-1 ; j++ ) {
-                    list[j] = list[j+1];
+                    list[j] = list[j + 1];
                 }
                 length = length - 1;
                 return;
